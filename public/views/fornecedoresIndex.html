@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Resilia</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+</head>
+
+<body>
+    <header>
+        <img class="hLogo" src="../assets/logo.png">
+        <div class="hLinks">
+            <a class="hBotao hPedidos" href="./pedidosIndex.html">Pedidos</a>
+            <a class="hBotao hProdutos" href="./produtoIndex.html">Produtos</a>
+            <a class="hBotao hFornecedores" href="./fornecedoresIndex.html">Fornecedores</a>
+            <a class="hBotao hClientes" href="./clientesIndex.html">Clientes</a>
+            <a class="hBotao hFuncionários" href="./funcionariosIndex.html">Funcionários</a>
+        </div>
+    </header>
+    <div class = pConteudo>
+        <h1 class="pTitulo">Cadastre um novo Fornecedor</h1>
+        <form class="pForm" action="http://localhost:3000/fornecedor" method="POST">
+            <div class="pInput">
+                <p>Qual o Nome?</p>
+                <input class = "pFormInput" name="nome" type="text" placeholder="Atacadao do Joao">
+            </div>
+            <div class="pInput">
+                <p>Qual o CNPJ?</p>
+                <input class = "pFormInput" name="CNPJ" type="text" placeholder="10020030012">
+            </div>
+            <div class="pInput">
+                <p>Qual o telefone?</p>
+                <input class = "pFormInput" name="telefone" type="text" placeholder="11 912345678">
+            </div>
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Cadastrar">
+        </form>
+
+        <h1 class="pTitulo">Listar Fornecedores</h1>
+        <form class="pForm" action="http://localhost:3000/fornecedor" method="GET">
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Listar">
+        </form>
+    </div>
+    <footer>
+        <p class="fText">Desenvolvido por Daniel Fujita, Debora Oliveira, Giovanna Assis, Mariana Vettorazzo, Pedro Alves</p>
+    </footer>
+</body>
+
+</html>

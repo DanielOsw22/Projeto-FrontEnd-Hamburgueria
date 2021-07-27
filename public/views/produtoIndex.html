@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Resilia</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+</head>
+
+<body>
+    <header>
+        <img class="hLogo" src="../assets/logo.png">
+        <div class="hLinks">
+            <a class="hBotao hPedidos" href="./pedidosIndex.html">Pedidos</a>
+            <a class="hBotao hProdutos" href="./produtoIndex.html">Produtos</a>
+            <a class="hBotao hFornecedores" href="./fornecedoresIndex.html">Fornecedores</a>
+            <a class="hBotao hClientes" href="./clientesIndex.html">Clientes</a>
+            <a class="hBotao hFuncionários" href="./funcionariosIndex.html">Funcionários</a>
+        </div>
+    </header>
+    <div class = pConteudo>
+        <h1 class="pTitulo">Cadastre um novo produto</h1>
+        <form class="pForm" action="http://localhost:3000/produto" method="POST">
+            <div class="pInput">
+                <p>Qual o produto?</p>
+                <input class = "pFormInput" name="descricao" type="text" placeholder="ex. Combo 1">
+            </div>
+            <div class="pInput">
+                <p>Qual o preço de venda?</p>
+                <input class = "pFormInput" name="preco" type="number" placeholder="ex. 20.0">
+            </div>
+            <div class="pInput">
+                <p>Qual a quantidade inicial em estoque?</p>
+                <input class = "pFormInput" name="quantidade" type="number" placeholder="ex. 30">
+            </div>
+            <div class="pInput">
+                <p>Qual o ID do fornecedor?</p>
+                <input class = "pFormInput" name="ID_fornecedor" type="text" placeholder="ex. 2">
+            </div>
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Cadastrar">
+        </form>
+
+        <h1 class="pTitulo">Listar Produtos</h1>
+        <form class="pForm" action="http://localhost:3000/produto" method="GET">
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Listar">
+        </form>
+
+        <h1 class="pTitulo">Busque um produto específico</h1>
+        <form class="pForm" action="http://localhost:3000/produto/busca" method="POST">
+            <div class="pInput">
+                <p>Qual o ID do produto?</p>
+                <input class = "pFormInput" name="ID_produto" type="number" placeholder="ex. 2">
+            </div>
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Buscar">
+        </form>
+    </div>
+    <footer>
+        <p class="fText">Desenvolvido por Daniel Fujita, Debora Oliveira, Giovanna Assis, Mariana Vettorazzo, Pedro Alves</p>
+    </footer>
+</body>
+
+</html>

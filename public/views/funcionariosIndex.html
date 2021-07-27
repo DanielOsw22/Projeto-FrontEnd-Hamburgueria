@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria Resilia</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/produtos.css">
+</head>
+
+<body>
+    <header>
+        <img class="hLogo" src="../assets/logo.png">
+        <div class="hLinks">
+            <a class="hBotao hPedidos" href="./pedidosIndex.html">Pedidos</a>
+            <a class="hBotao hProdutos" href="./produtoIndex.html">Produtos</a>
+            <a class="hBotao hFornecedores" href="./fornecedoresIndex.html">Fornecedores</a>
+            <a class="hBotao hClientes" href="./clientesIndex.html">Clientes</a>
+            <a class="hBotao hFuncionários" href="./funcionariosIndex.html">Funcionários</a>
+        </div>
+    </header>
+    <div class = pConteudo>
+        <h1 class="pTitulo">Cadastre um novo Funcionário</h1>
+        <form class="pForm" action="http://localhost:3000/funcionario" method="POST">
+            <div class="pInput">
+                <p>Qual o CPF?</p>
+                <input class = "pFormInput" name="CPF" type="text" placeholder="10020030012">
+            </div>
+            <div class="pInput">
+                <p>Qual o nome?</p>
+                <input class = "pFormInput" name="nome" type="text" placeholder="Joao Silva">
+            </div>
+            <div class="pInput">
+                <p>Qual o cargo?</p>
+                <input class = "pFormInput" name="cargo" type="text" placeholder="Atendente Senior">
+            </div>
+            <div class="pInput">
+                <p>Qual o endereço?</p>
+                <input class = "pFormInput" name="endereco" type="text" placeholder="Rua joao silva, 731">
+            </div>
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Cadastrar">
+        </form>
+
+        <h1 class="pTitulo">Listar Funcionários</h1>
+        <form class="pForm" action="http://localhost:3000/funcionario" method="GET">
+            <input class = "pFormSubmit" name = "Submit" type="submit" value="Listar">
+        </form>
+    </div>
+    <footer>
+        <p class="fText">Desenvolvido por Daniel Fujita, Debora Oliveira, Giovanna Assis, Mariana Vettorazzo, Pedro Alves</p>
+    </footer>
+</body>
+
+</html>
