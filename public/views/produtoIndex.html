@@ -23,7 +23,7 @@
     </header>
     <div class = pConteudo>
         <h1 class="pTitulo">Cadastre um novo produto</h1>
-        <form class="pForm" action="http://localhost:3000/produto" method="POST">
+        <form class="pForm" action="https://hamburgueria-resilia.herokuapp.com/produto" method="POST">
             <div class="pInput">
                 <p>Qual o produto?</p>
                 <input class = "pFormInput" name="descricao" type="text" placeholder="ex. Combo 1">
@@ -44,12 +44,12 @@
         </form>
 
         <h1 class="pTitulo">Listar Produtos</h1>
-        <form class="pForm" action="http://localhost:3000/produto" method="GET">
+        <form class="pForm" action="https://hamburgueria-resilia.herokuapp.com/produto" method="GET">
             <input class = "pFormSubmit" name = "Submit" type="submit" value="Listar">
         </form>
 
         <h1 class="pTitulo">Busque um produto específico</h1>
-        <form class="pForm" action="http://localhost:3000/produto/busca" method="POST">
+        <form class="pForm" action="https://hamburgueria-resilia.herokuapp.com/produto/busca" method="POST">
             <div class="pInput">
                 <p>Qual o ID do produto?</p>
                 <input class = "pFormInput" name="ID_produto" type="number" placeholder="ex. 2">
